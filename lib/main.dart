@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './pages/bottom_navigation_bar_demo.dart';
 import './pages/listview-demo.dart';
+import './pages/basic_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -65,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: TabBarView(
           children: <Widget>[
             ListViewDemo(),
-            Icon(Icons.change_history, size: 128, color: Colors.black12),
+            BasicDemo(),
             Icon(Icons.directions_bike, size: 128, color: Colors.black12),
           ],
         ),
