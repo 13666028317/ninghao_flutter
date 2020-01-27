@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import './pages/bottom_navigation_bar_demo.dart';
 import './pages/listview-demo.dart';
 import './pages/basic_demo.dart';
+import './pages/layout_demo.dart';
+import './pages/view_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
@@ -60,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Tab(icon: Icon(Icons.local_florist)),
               Tab(icon: Icon(Icons.change_history)),
               Tab(icon: Icon(Icons.directions_bike)),
+              Tab(icon: Icon(Icons.view_quilt)),
             ],
           ),
         ),
@@ -67,7 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             ListViewDemo(),
             BasicDemo(),
-            Icon(Icons.directions_bike, size: 128, color: Colors.black12),
+            LayoutDemo(),
+            ViewDemo(),
           ],
         ),
         drawer: Drawer(

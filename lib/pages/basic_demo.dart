@@ -85,3 +85,15 @@ class Box001 extends StatelessWidget {
     );
   }
 }
+
+
+class Box002 extends StatelessWidget {
+  const Box002({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: null,
+    );
+  }
+}
