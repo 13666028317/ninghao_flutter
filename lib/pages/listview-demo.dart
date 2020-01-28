@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../model/post.dart';
+import '../pages/post_show.dart';
 
 class ListViewDemo extends StatelessWidget {
   Widget _listItemBuilder(BuildContext context, int index) {
@@ -21,6 +22,23 @@ class ListViewDemo extends StatelessWidget {
                   style: Theme.of(context).textTheme.subhead),
               SizedBox(height: 16.0),
             ],
+          ),
+          Positioned.fill(
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                splashColor: Colors.white.withOpacity(0.3),
+                highlightColor: Colors.white.withOpacity(0.6),
+                onTap: () {
+                  // debugPrint('onTap');
+                  Navigator.of(context).push(
+                     MaterialPageRoute(
+                       builder: (context) => PostShow(post: posts[index]),
+                     )
+                   );
+                },
+              ),
+            ),
           ),
         ],
       ),

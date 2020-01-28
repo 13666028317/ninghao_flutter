@@ -3,8 +3,9 @@ import './pages/bottom_navigation_bar_demo.dart';
 import './pages/listview-demo.dart';
 import './pages/basic_demo.dart';
 import './pages/layout_demo.dart';
-import './pages/view_demo.dart';
+// import './pages/view_demo.dart';
 import './pages/sliver_demo.dart';
+import './pages/navgitor_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,6 +22,10 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.white70,
       ),
       home: MyHomePage(title: 'NINGHAO'),
+      // home: NavigatorDemo(),
+      routes: {
+        '/about':(context) => Page(title: 'About'),
+      },
     );
   }
 }
