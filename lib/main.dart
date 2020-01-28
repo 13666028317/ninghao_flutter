@@ -4,6 +4,7 @@ import './pages/listview-demo.dart';
 import './pages/basic_demo.dart';
 import './pages/layout_demo.dart';
 import './pages/view_demo.dart';
+import './pages/sliver_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -71,7 +72,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ListViewDemo(),
             BasicDemo(),
             LayoutDemo(),
-            ViewDemo(),
+            // ViewDemo(),
+            SliverDemo(),
           ],
         ),
         drawer: Drawer(

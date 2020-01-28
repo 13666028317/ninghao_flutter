@@ -10,7 +10,7 @@ class LayoutDemo extends StatefulWidget {
 class _LayoutDemoState extends State<LayoutDemo> {
   @override
   Widget build(BuildContext context) {
-    return AspectRatioDemo();
+    return StackDemo();
   }
 }
 
@@ -31,8 +31,8 @@ class IconBadge extends StatelessWidget {
   }
 }
 
-class StackSemo extends StatelessWidget {
-  const StackSemo({Key key}) : super(key: key);
+class StackDemo extends StatelessWidget {
+  const StackDemo({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
