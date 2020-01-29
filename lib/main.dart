@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/',
+      initialRoute: '/form',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
