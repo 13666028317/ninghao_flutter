@@ -6,6 +6,8 @@ import './pages/layout_demo.dart';
 // import './pages/view_demo.dart';
 import './pages/sliver_demo.dart';
 import './pages/navgitor_demo.dart';
+import './pages/form_demo.dart';
+import 'pages/form_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,11 +22,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
+        accentColor: Color.fromRGBO(3, 54, 255, 1.0),
       ),
-      home: MyHomePage(title: 'NINGHAO'),
+      // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
+      initialRoute: '/',
       routes: {
+        '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
+        '/form' : (context) => FormDemo(),
       },
     );
   }
