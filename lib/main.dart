@@ -8,6 +8,7 @@ import './pages/sliver_demo.dart';
 import './pages/navgitor_demo.dart';
 import './pages/form_demo.dart';
 import 'pages/form_demo.dart';
+import './pages/material_compontent.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,11 +27,12 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/form',
+      initialRoute: '/mdc',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
         '/form' : (context) => FormDemo(),
+        '/mdc' : (context) => MaterialCompontents(),
       },
     );
   }
