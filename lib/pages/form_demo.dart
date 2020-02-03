@@ -11,6 +11,9 @@ class _FormDemoState extends State<FormDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('FormDemo'),
+      ),
       body: Theme(
         data: Theme.of(context).copyWith(
           primaryColor: Colors.black,

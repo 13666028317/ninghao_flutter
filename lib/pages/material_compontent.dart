@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import './popup_menu_button_demo.dart';
-
+import './form_demo.dart';
+import './basic_check_demo.dart';
+import './radio_demo.dart';
 class MaterialCompontents extends StatefulWidget {
   MaterialCompontents({Key key}) : super(key: key);
 
@@ -22,6 +24,9 @@ class _MaterialCompontentsState extends State<MaterialCompontents> {
                 title: 'flotActionButtonDemo', page: FloatActionButtonDemo()),
             ListItem(title: 'ButtonDemo', page: ButtonDemo()),
             ListItem(title: 'PopmenuDemo', page: PopupMenuDemo()),
+            ListItem(title: 'formDemo', page: FormDemo()),
+            ListItem(title: 'checkBox', page: CheckBoxDemo()),
+            ListItem(title: 'radioDemo', page: RadioDemo()),
           ],
         ),
       ),
