@@ -9,6 +9,7 @@ import './date_demo.dart';
 import './simple_dialog_demo.dart';
 import './alert_dialog_demo.dart';
 import './bottom_sheet_demo.dart';
+import './snackbar_demo.dart';
 class MaterialCompontents extends StatefulWidget {
   MaterialCompontents({Key key}) : super(key: key);
 
@@ -39,6 +40,7 @@ class _MaterialCompontentsState extends State<MaterialCompontents> {
             ListItem(title: 'Simpledialog', page: SimpleDialogDemo()),
             ListItem(title: 'alertdialog', page: AlertDialogDemo()),
             ListItem(title: 'bottomSheet', page: BottomSheetDemo()),
+            ListItem(title: 'snackDemo', page: SnaclBarDemo()),
           ],
         ),
       ),
