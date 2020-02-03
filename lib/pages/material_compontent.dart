@@ -5,6 +5,7 @@ import './basic_check_demo.dart';
 import './radio_demo.dart';
 import './switch_demo.dart';
 import './slider_demo.dart';
+import './date_demo.dart';
 class MaterialCompontents extends StatefulWidget {
   MaterialCompontents({Key key}) : super(key: key);
 
@@ -31,6 +32,7 @@ class _MaterialCompontentsState extends State<MaterialCompontents> {
             ListItem(title: 'radioDemo', page: RadioDemo()),
             ListItem(title: 'switchDemo', page: SwitchDemo()),
             ListItem(title: 'sliderDemo', page: SliderDemo()),
+            ListItem(title: 'dateTimeDemo', page: DateTimeDemo()),
           ],
         ),
       ),
