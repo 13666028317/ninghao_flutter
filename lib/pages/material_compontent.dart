@@ -15,6 +15,7 @@ import './chip_demo.dart';
 import './data_table_demo.dart';
 import './page_data_table_demo.dart';
 import './car_demo.dart';
+import './stepper_demo.dart';
 class MaterialCompontents extends StatefulWidget {
   MaterialCompontents({Key key}) : super(key: key);
 
@@ -32,6 +33,7 @@ class _MaterialCompontentsState extends State<MaterialCompontents> {
         ),
         body: ListView(
           children: <Widget>[
+            ListItem(title: 'SetpperDemo', page: SetpperDemo()),
             ListItem(title: 'cardDemo', page: CardDemo()),
             ListItem(title: 'dataTableDemo', page: DataTableDemo()),
             ListItem(title: 'PageDataTableDemo', page: PageDataTableDemo()),
