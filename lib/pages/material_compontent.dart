@@ -12,6 +12,8 @@ import './bottom_sheet_demo.dart';
 import './snackbar_demo.dart';
 import './expansion_panel_demo.dart';
 import './chip_demo.dart';
+import './data_table_demo.dart';
+import './page_data_table_demo.dart';
 class MaterialCompontents extends StatefulWidget {
   MaterialCompontents({Key key}) : super(key: key);
 
@@ -29,6 +31,8 @@ class _MaterialCompontentsState extends State<MaterialCompontents> {
         ),
         body: ListView(
           children: <Widget>[
+            ListItem(title: 'dataTableDemo', page: DataTableDemo()),
+            ListItem(title: 'PageDataTableDemo', page: PageDataTableDemo()),
             ListItem(
                 title: 'flotActionButtonDemo', page: FloatActionButtonDemo()),
             ListItem(title: 'ButtonDemo', page: ButtonDemo()),
