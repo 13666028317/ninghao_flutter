@@ -11,6 +11,7 @@ import './alert_dialog_demo.dart';
 import './bottom_sheet_demo.dart';
 import './snackbar_demo.dart';
 import './expansion_panel_demo.dart';
+import './chip_demo.dart';
 class MaterialCompontents extends StatefulWidget {
   MaterialCompontents({Key key}) : super(key: key);
 
@@ -43,6 +44,7 @@ class _MaterialCompontentsState extends State<MaterialCompontents> {
             ListItem(title: 'bottomSheet', page: BottomSheetDemo()),
             ListItem(title: 'snackDemo', page: SnaclBarDemo()),
             ListItem(title: 'ExpansionPanelDemo', page: ExpansionPanelDemo()),
+            ListItem(title: 'ChipDemo', page: ChipDemo()),
           ],
         ),
       ),
