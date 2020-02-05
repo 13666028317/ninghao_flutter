@@ -9,6 +9,7 @@ import './pages/navgitor_demo.dart';
 import './pages/form_demo.dart';
 import 'pages/form_demo.dart';
 import './pages/material_compontent.dart';
+import './pages/state/state_management_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,12 +28,13 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/mdc',
+      initialRoute: '/state',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
         '/form' : (context) => FormDemo(),
         '/mdc' : (context) => MaterialCompontents(),
+        '/state' : (context) => StateManagementDemo(),
       },
     );
   }
