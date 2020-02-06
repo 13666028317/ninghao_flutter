@@ -11,6 +11,7 @@ import 'pages/form_demo.dart';
 import './pages/material_compontent.dart';
 import './pages/state/state_management_demo.dart';
 import './pages/stream/stream_demo.dart';
+import './pages/rxdart/rxdart_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/stream',
+      initialRoute: '/rxdart',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         '/mdc' : (context) => MaterialCompontents(),
         '/state' : (context) => StateManagementDemo(),
         '/stream' : (context) => StreamDemo(),
+        '/rxdart' : (context) => RxDartDemo(),
       },
     );
   }
