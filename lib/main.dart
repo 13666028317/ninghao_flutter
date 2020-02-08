@@ -15,6 +15,9 @@ import './pages/rxdart/rxdart_demo.dart';
 import './pages/bloc/bloc_demo.dart';
 import './pages/http/http_demo.dart';
 import './pages/animation/anmition_demo.dart';
+import './pages/i18n/i18n_demo.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import './pages/i18n/map/localiztions_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,6 +26,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // locale: Locale('en', 'US'),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        NinghaoLocliztionsDelegate(),
+      ],
+      supportedLocales: [
+        Locale('en', 'US'),
+        Locale('zh', 'CN'),
+      ],
+      localeResolutionCallback: (Locale locale, Iterable<Locale> supLocale) {
+        return Locale('zh', 'CN');
+      },
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -33,7 +49,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/animation',
+      initialRoute: '/i18n',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
@@ -45,6 +61,7 @@ class MyApp extends StatelessWidget {
         '/bloc' : (context) => BlocDemo(),
         '/http' : (context) => HttpDemo(),
         '/animation' : (context) => AnimationDemo(),
+        '/i18n' : (context) => I18nDemo(),
       },
     );
   }
