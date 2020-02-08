@@ -14,6 +14,7 @@ import './pages/stream/stream_demo.dart';
 import './pages/rxdart/rxdart_demo.dart';
 import './pages/bloc/bloc_demo.dart';
 import './pages/http/http_demo.dart';
+import './pages/animation/anmition_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/http',
+      initialRoute: '/animation',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         '/rxdart' : (context) => RxDartDemo(),
         '/bloc' : (context) => BlocDemo(),
         '/http' : (context) => HttpDemo(),
+        '/animation' : (context) => AnimationDemo(),
       },
     );
   }
