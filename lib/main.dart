@@ -18,6 +18,7 @@ import './pages/animation/anmition_demo.dart';
 import './pages/i18n/i18n_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import './pages/i18n/map/localiztions_demo.dart';
+import './pages/test/test_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: MyHomePage(title: 'NINGHAO'),
       // home: NavigatorDemo(),
-      initialRoute: '/i18n',
+      initialRoute: '/test',
       routes: {
         '/' : (context) => MyHomePage(title: 'NINGHAO'),
         '/about':(context) => Page(title: 'About'),
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
         '/http' : (context) => HttpDemo(),
         '/animation' : (context) => AnimationDemo(),
         '/i18n' : (context) => I18nDemo(),
+        '/test' : (context) => TestDemo(),
       },
     );
   }
